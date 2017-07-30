@@ -1,5 +1,4 @@
-clc;
-clear;
+function cpoints = Cpoints()
 k=1;
 %% 计算点，纵向100个，1m一个，横向，每车道有三个，共三车道，计算点距离为1m
 Yc = zeros(3,900);
@@ -12,4 +11,4 @@ for  j=0.5:1:100
         k = k+1;
     end
 end
-Yc
+cpoints = Yc;

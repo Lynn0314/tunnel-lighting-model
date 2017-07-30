@@ -1,8 +1,8 @@
-%% 计算点的照度值计算
-function illuminance = calIlluminance(CoordC, CoordD, alpha, beta)
+%% 计算点的照度值计算,flag=1,灯具照向正向
+function illuminance = calIlluminance(CoordC, CoordD, alpha, beta, flag)
 
 %% 根据计算点，灯具坐标，灯具横向照明角度，灯具纵向照明角度，计算出theta角度，出射光线与灯轴夹角
-theta1 = calTheta(CoorC,CoorD,alpha, beta);
+theta1 = calTheta(CoordC,CoordD,alpha, beta,flag);
 
 %% 根据theta计算I(光强数据)
 Itheta = calITheta(theta1);
