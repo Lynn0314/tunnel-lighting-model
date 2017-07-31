@@ -24,6 +24,8 @@ for points = 1:100
         for lampsIndex = index:(index+3)
             %% 两个灯对计算点的亮度
             CoorD1 = DlPoints(:,lampsIndex);
+            CoorC
+            CoorD1
             [tanGamma,beta1] = calQAngle(CoorC, CoorD1);
             q = calSimplifiedQ(tanGamma,beta1);
             L(indexCal) = L(indexCal)+ calIlluminance(CoorC,CoorD1,alpha, beta,1)*q;
